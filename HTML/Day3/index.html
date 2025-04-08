@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS link after title tag -->
+    <style>
+        h1 {
+            /* Internal CSS(Higher priority over External CSS) */
+            color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Linking CSS file</h1>
+    <h2 style="color: red;" id="b">Inline CSS</h2> <!-- Inline CSS(Higher priority) -->
+    <p>There are 3 types of CSS</p>
+    <dl>
+        <dt>Inline CSS</dt>
+        <dd>Inline using on element directly with "style" attribute. Note: Having a higher priority</dd>
+        <dt>Internal CSS</dt>
+        <dd>Internal CSS is using with &lt;style&gt;&lt;&#47;style&gt;. Note: Having a higher priority over External CSS
+        </dd>
+    </dl>
+    <dt>Extenal CSS</dt>
+    <dd>External CSS is using with file like index.html or script.js but it have style.css .css is extension and its
+        mandatory. Note: It is best practice to use it.</dd>
+
+    <br>
+    <hr>
+    <br>
+
+    <h1>Semantic Tags</h1>
+    <mark>Semantic elements = elements with a meaning.</mark>
+    <h2>What are Semantic Elements?</h2>
+    <p>A semantic element clearly describes its meaning to both the browser and the developer. <br>
+        Examples of non-semantic elements: div and span - Tells nothing about its content. Examples of semantic <br>
+        elements: img, table, and article - Clearly defines its content.</p>
+    <h2>Semantic tags having:</h2>
+    <ul>
+        <li>header</li>
+        <li>nav</li>
+        <li>footer</li>
+        <li>main</li>
+        <li>article</li>
+        <li>details</li>
+    </ul>
+
+    <br>
+    <hr>
+    <br>
+
+    <h1>Advance Form in HTML</h1>
+
+    <form action="">
+        <input list="skill">
+        <datalist id="skill"> <!-- datalist tag is used for pre-defined options -->
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="JS"></option>
+            <option value="ReactJS"></option>
+        </datalist>
+    </form>
+    <mark>Note: The "list" tag is refers "id", it must be same value of "id"</mark>
+
+    <h2>Simple Addition</h2>
+
+    <form oninput="result.value = parseInt(num1.value) + parseInt(num2.value)">
+        <input type="number" id="num1" name="num1" value="0"> +
+        <input type="number" id="num2" name="num2" value="0"> =
+        <output name="result" for="num1 num2">0</output>
+    </form>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>HTML &lt;progress&gt; tag</h2>
+    <label for="percentage">
+        <progress id="percentage" value="25" max="100"></progress> <!-- showing progress -->
+    </label>
+
+    <hr>
+    <br />
+    <hr>
+    <h2>HTML pattern attribute</h2><!-- Rule for what input is allowed -->
+
+    <form action="">
+        <input type="text" pattern="/d{10}" title="Enter your Phone Number">
+    </form>
+
+    <hr>
+    <br>
+    <hr>
+
+    <h2>HTML maxlength attribute</h2>
+    <form action="">
+        <input type="text" maxlength="8"><!-- It defines the length data -->
+    </form>
+
+    <hr>
+    <br>
+    <hr>
+
+    <h2>HTML meter tag</h2> <!-- its also similar progress tag using for range -->
+    <form action="">
+        <meter value="5" max="2" min="8"></meter>
+        <meter value="5"></meter>
+    </form>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>HTML reqiured attribute</h2>
+    <form action="">
+        Name:
+        <input type="text">
+        <br>
+        Phone Number:
+        <input type="number">
+        <br>
+        Email:
+        <input type="email">
+        <br>
+        Password:
+        <input type="password" required="reqiured"> <!-- required attribute is used for mandatory input field -->
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <hr>
+    <br>
+
+    <h1>Difference between Client Side vs Server Side</h1>
+    <dl>
+        <dt>Where it happens:</dt>
+        <dd>In the user's browser, before the form is submitted.</dd>
+        <dt>Where it happens:</dt>
+        <dd>On the web server, after the form is submitted.</dd>
+    </dl>
+
+    <h2>✅ Moral of the story:</h2>
+    <p>JS validation = helpful
+        <br>
+        Server validation = essential
+    </p>
+
+    <p>The aria-* attributes in HTML are part of the <br> Accessible Rich Internet Applications (ARIA) specification.
+        <br> They're used to improve accessibility for users who rely on assistive
+        <br> technologies like screen readers.
+
+    </p>
+
+</body>
+
+</html>
