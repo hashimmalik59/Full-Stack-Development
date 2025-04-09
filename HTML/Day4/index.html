@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Performance Optimization</title>
+  </head>
+
+  <body style="font-family: Poppins, sans-serif">
+    <h1>Optimizing Images and Videos for Faster Loading</h1>
+
+    <h1>🔧 IMAGE OPTIMIZATION</h1>
+    <p>
+      1. Choose the Right Format WebP / AVIF: Modern, highly compressed with
+      good quality <br />
+      (WebP is widely supported, AVIF is even smaller but newer). JPEG: Best for
+      photos; use progressive JPEGs. <br />
+
+      PNG: Use only for images requiring transparency. SVG: Great for icons and
+      simple graphics (text-based and scalable).
+    </p>
+
+    <h2>2. Resize Images</h2>
+    <p>
+      Never upload large, full-res images unless necessary. Use srcset and sizes
+      in img tags for responsive images.
+    </p>
+
+    <h2>3. Compress Images</h2>
+    <p>
+      Tools: Lossy: TinyPNG, ImageOptim Lossless: Squoosh Set a balance between
+      quality and file size (usually 60–80% quality is good enough).
+    </p>
+
+    <br />
+    <hr />
+    <br />
+    <h1>🎞️ VIDEO OPTIMIZATION</h1>
+    <h2>1. Choose Efficient Formats</h2>
+    <p>
+      Use MP4 (H.264) for widest compatibility. WebM or AV1 for better
+      compression (where supported).
+    </p>
+
+    <h2>2. Compress Videos</h2>
+    <p>
+      Use HandBrake or FFmpeg to reduce bitrate and resolution. Target mobile
+      users with 720p or 480p where possible.
+    </p>
+    <h2>3. Stream Instead of Auto-Loading</h2>
+    <p>
+      Use adaptive bitrate streaming with services like HLS or DASH (especially
+      for long videos). Don’t autoplay unless muted and user-initiated.
+    </p>
+  </body>
+</html>
