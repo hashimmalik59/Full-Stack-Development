@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+}
+
+header h1 {
+  font-family: "Playfair Display", serif;
+}
+
+header {
+  position: fixed;
+  width: min-content;
+}
+
+header,
+h1,
+nav,
+a {
+  background-color: #fff;
+  color: #000;
+}
