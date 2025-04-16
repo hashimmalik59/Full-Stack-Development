@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    /* box-sizing: border-box; */
+}
+
+#firstBox {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    padding: 10px;
+    margin: 5px;
+}
+
+#secondBox {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 5px;
+}
