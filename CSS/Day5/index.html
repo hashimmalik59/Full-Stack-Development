@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Flexbox</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>CSS Flexbox</h1>
+  <br />
+  <hr />
+  <br />
+  <h2>Flexbox Introduction</h2>
+  <h3>🔹 What is Flexbox?</h3>
+  <p>
+    Flexbox, short for Flexible Box Layout, is a CSS layout module that helps
+    you align and distribute space among items in a container — even when
+    their sizes are unknown or dynamic. It's super useful for creating
+    responsive layouts and aligning elements vertically and horizontally
+    without needing floats or complicated positioning.
+  </p>
+  <br />
+  <hr />
+  <br />
+  <h2>Flex Direction</h2>
+  <div class="parent">
+    <!-- Converts direction into row -->
+    <div class="child" id="child1">1</div>
+    <div class="child" id="child2">2</div>
+    <div class="child" id="child3">3</div>
+    <div class="child" id="child4">4</div>
+  </div>
+  <br />
+  <hr />
+  <br />
+  <h2>Flex Wrap and Flex Flow</h2>
+  <p><b>Flex Flow</b> is the shorthand of Flex wrap and Flex flow</p>
+  <!-- Flex Wrap will wrap the element into next line when width is insufficient for it -->
+  <!-- Flex Flow is the shorthand of Flex Wrap and Flex Flow "flex-flow: column wrap;" -->
+  <br />
+  <hr />
+  <br />
+  <h2>Justify Content:</h2>
+  <p>Horizontal Alignment, Row, x-axis, <b>Cross-axis</b></p>
+  <br />
+  <hr />
+  <br />
+  <h2>Align Items:</h2>
+  <p>Vertical Alignment, Column, yx-axis, <b>Main-axis</b></p>
+  <br />
+  <hr />
+  <br />
+  <h2>Align Content:</h2>
+  <p>
+    Align Conten will be worked when wrap is on it will apply between
+    row/column
+  </p>
+  <p>Note: It always apply with flex wrap</p>
+  <br />
+  <hr />
+  <br />
+  <h2>Align Self:</h2>
+  <p>Vertical alignment for individual box(child).</p>
+  <br />
+  <hr />
+  <br />
+  <h2>Flexbox Order</h2>
+  <p>
+    It will change the order of individual box(child) like: lower to higher.
+  </p>
+  <br />
+  <hr />
+  <br />
+  <h2>Flex Grow:</h2>
+  <p>
+    It increase the size(width) of an individual box(child). eg: if we give
+    value "2" then it will be grow 2x than others.
+  </p>
+  <br>
+  <hr>
+  <br>
+  <h2>Flex Basis:</h2>
+  <p>
+    In CSS Flexbox, flex-basis defines the initial main size of a flex item before any space is distributed according to
+    flex-grow or flex-shrink.
+  </p>
+  <br>
+  <hr>
+  <br>
+  <h2>Flex Shrink:</h2>
+  <p>
+    It decrease the size(width) of an individual box(child). eg: if we give
+    value "2" then it will be shrink 2x than others.
+  </p>
+</body>
+
+</html>
