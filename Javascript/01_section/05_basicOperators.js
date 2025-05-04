@@ -6,6 +6,7 @@ console.log(myAge);
 let myBrotherAge = currentYear - 2007;
 console.log(myBrotherAge);
 
+// Mathematical Operators
 console.log(myAge * 2, myAge / 2, 2 ** 3);
 // 2 ** 3 means => 2 to the power of 3 => 2 * 2 * 2
 
