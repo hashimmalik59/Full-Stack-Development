@@ -12,3 +12,4 @@ console.log(currentYear - myBirthYear > currentYear - myBrotherBirthYear); // wh
 
 console.log(25 - 10 - 5); // left to right => 10 answer
 // but if right tp left then result will be totally changed
+
